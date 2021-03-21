@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Weather Report</title>
 </head>
 <body>
+    <div class=grid-container>
     <h1>Weather Report</h1>
 <main>
   <h3>City:</h3>
@@ -20,10 +22,11 @@
   <p>Weather:</p>
   <p id="weather"></p>
 </main>
-<form>
-    <input type="text" placeholder="City Name"/>
+</div>
+<form class=input-container name=form1>
+    <input type="text" placeholder="City Name" id="inputCity"/>
     <input type="submit" value="Get Weather Info" />
-  </form>
+</form>
 </body>
 </html>
 
